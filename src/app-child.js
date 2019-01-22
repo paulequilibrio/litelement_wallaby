@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit-element/lit-element.js'
+import { html, LitElement } from 'lit-element/lit-element.js'
 import '@polymer/paper-input/paper-input.js'
 
 export class AppChild extends LitElement {

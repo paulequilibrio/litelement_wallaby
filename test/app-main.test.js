@@ -1,15 +1,11 @@
-describe('app-main', function () {
-  var element
-  beforeEach(function () {
-    element = document.createElement('app-main')
-    document.body.appendChild(element)
-  })
+import { html } from 'lit-element/lit-element.js'
+import { fixture, expect } from '@open-wc/testing'
 
-  afterEach(function () {
-    document.body.removeChild(element)
-  })
+import '../src/app-main.js'
 
-  it('should work', function () {
-    assert.equal(element.name, 'Main element')
+describe('<app-main>', () => {
+  it('has a default property name', async () => {
+    const el = await fixture(html`<app-main></app-main>`)
+    expect(el.name).to.equal('Main element')
   })
 })

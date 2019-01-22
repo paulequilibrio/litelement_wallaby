@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit-element/lit-element.js'
+import { html, LitElement } from 'lit-element/lit-element.js'
 import './app-child.js'
 
 export class AppMain extends LitElement {
