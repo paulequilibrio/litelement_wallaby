@@ -7,19 +7,13 @@
     "test": "test"
   },
   "scripts": {
-    "test": "karma start --single-run --browsers ChromeHeadless karma.conf.js"
+    "test": "karma start",
+    "test:watch": "karma start --auto-watch=true --single-run=false"
   },
   "standard": {
     "globals": [
-      "mocha",
-      "chai",
-      "before",
-      "beforeEach",
-      "after",
-      "afterEach",
       "describe",
-      "it",
-      "assert"
+      "it"
     ]
   },
   "repository": {
@@ -30,7 +24,7 @@
     "LitElement",
     "Wallaby.js"
   ],
-  "author": "Paulo Alexandre <paulequilibrio@gmail.com>",
+  "author": "Paulo Alexandre Aquino da Costa (paulequilibrio)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/paulequilibrio/litelement_wallaby/issues"
@@ -42,13 +36,9 @@
     "lit-element": "^2.0.0-rc.3"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "karma": "^3.1.4",
-    "karma-chai": "^0.1.0",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-mocha": "^1.3.0",
-    "karma-module-resolver-preprocessor": "^1.1.0",
-    "mocha": "^5.2.0",
+    "@open-wc/testing": "^0.9.7",
+    "@open-wc/testing-karma": "^0.4.6",
+    "@open-wc/testing-wallaby": "^0.1.7",
     "polymer-cli": "^1.9.5"
   }
 }
